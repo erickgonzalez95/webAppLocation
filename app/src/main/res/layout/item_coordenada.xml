@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp">
+
+    <!--on below line we are creating a
+      linear layout for grid view item-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--on below line we are creating
+             a simple image view-->
+        <ImageView
+            android:id="@+id/idIVCourse"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:src="@mipmap/ic_location" />
+
+        <!--on below line we are creating
+            a simple text view-->
+        <TextView
+            android:id="@+id/idLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:text="Latitud"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/idLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:text="Longitud"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+
+    </LinearLayout>
+    <TextView
+    android:id="@+id/idAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="4dp"
+    android:text="address"
+    android:textAlignment="textEnd"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    tools:ignore="RtlCompat" />
+
+</androidx.cardview.widget.CardView>
